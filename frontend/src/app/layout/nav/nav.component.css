@@ -1,26 +1,20 @@
-.nav{
+*{
+  margin :0;
+}
+.nav {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* background-color: #128cff; */
-  background-color: rgb(18, 140, 255,0.7);
-  transition-property: all;
-  transition-duration: 0.6s ;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  position: relative;
-  left: -320px; 
-
-}
-.showmnpc{
-  animation: openMenue 0.3s ease-in-out;
-  animation-fill-mode: forwards;
-  
-
+  width: auto;
+  background-color: rgba(18, 140, 255, 0.7);
+  transition: all 0.6s ease-in-out;
+  position: absolute; 
+  z-index: 1000; 
+  margin: 0;
 }
 
-h1{
-  color:hsl(208, 100%, 97%);
+h1 {
+  color: hsl(208, 100%, 97%);
   margin: 0;
   text-align: center;
   font-size: 3rem;
@@ -28,11 +22,7 @@ h1{
   padding-top: 0.1rem;
 }
 
-/* .nav:hover{
-  transform :translateX(150px) ;
-  background-color : blue ;
-} */
-.nav-btn{
+.nav-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,46 +32,53 @@ h1{
   padding-right: 5rem;
   margin: 20px;
   margin-left: 0;
-  
+  transition: all 0.6s ease-in-out;
 }
-.nav-it{
-  display : flex;
+
+.nav-btn:hover {
+  color: hsl(208, 100%, 97%);
+  background-color: aquamarine;
+  font-weight: 600;
+  border-radius: 10px;
+  transform: translateX(10px);
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-it {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
   cursor: pointer;
+  padding: 0;
   margin-left: 0;
   padding-right: 20px;
-  transition-property:all ;
-  transition-duration: 0.6s ;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
+  transition: all 0.6s ease-in-out;
 }
 
-.nav-it:hover{
-  background-color: rgb(18, 140, 255,0.7);
+.nav-it:hover {
+  background-color: rgba(18, 140, 255, 0.7);
   color: hsl(208, 100%, 97%);
   font-weight: 600;
   border-radius: 10px;
   transform: translateX(10px);
   padding-left: 20px;
-
 }
 
-
-.img-icon32{
+.img-icon32 {
   width: 40px;
   height: 40px;
   align-self: center;
+  transition: transform 0.3s;
 }
 
-
-
-@keyframes openMenue {
-  from{
+@keyframes openMenu {
+  from {
     left: -320px;
-  }to{
+  }
+  to {
     left: 0;
   }
 }

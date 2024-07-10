@@ -1,41 +1,31 @@
+<div class="nav" [@openClose]="isOpen ? 'open' : 'closed'">
+  <div class="nav-it" (click)="toggle()">
+    <a class="nav-btn"><h1></h1></a>
+    <img id="pcmenu" class="mnpcbtn img-icon32" [@rotateIcon]="isOpen ? 'rotated' : 'default'" src="assets/icons/arrow_forward_ios_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
+  </div>  
 
-<div class="nav">
-  <div class="nav-it">
-    <a class="nav-btn"> <h1>  </h1></a>
-    
-    <img id="pcmenu" class="mnpcbtn img-icon32" src="assets/icons/arrow_forward_ios_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
+  <div class="nav-it" [routerLink]="['/home']">
+    <a class="nav-btn"><h1> Home </h1></a>
+    <img class="img-icon32" src="assets/icons/home_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40 (1).png" alt="see">
+  </div>  
+
+  <div class="nav-it" [routerLink]="['/services']">
+    <a class="nav-btn"><h1> Services </h1></a>
+    <img class="img-icon32" src="assets/icons/engineering_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
+  </div>  
+
+  <div class="nav-it" [routerLink]="['/vision']">
+    <a class="nav-btn"><h1> Vision </h1></a>
+    <img class="img-icon32" src="assets/icons/diversity_1_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
   </div>  
   
-  <div class="nav-it">
-    <a class="nav-btn"> <h1> Home </h1></a>
-        <img class="img-icon32" src="assets/icons/home_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40 (1).png" alt="see">
-  </div>  
-
-  <div class="nav-it">
-    <a class="nav-btn"> <h1> Services </h1></a>
-        <img class="img-icon32"  src="assets/icons/engineering_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
-
-  </div>  
-  <div class="nav-it">
-    <a class="nav-btn"> <h1> Vision </h1></a>
-        <img class="img-icon32" src="assets/icons/diversity_1_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
-  </div>  
-  
-  <div class="nav-it">
-    <a class="nav-btn"> <h1> About us </h1></a>
+  <div class="nav-it" [routerLink]="['/about']">
+    <a class="nav-btn"><h1> About us </h1></a>
     <img class="img-icon32" src="assets/icons/group_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="group">
   </div>  
-  <div class="nav-it">
-    <a class="nav-btn"> <h1> Branches </h1></a>
-        <img class="img-icon32" src="assets/icons/person_play_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
+
+  <div class="nav-it" [routerLink]="['/branches']">
+    <a class="nav-btn"><h1> Branches </h1></a>
+    <img class="img-icon32" src="assets/icons/person_play_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
   </div>
 </div>
-
-<script>
-  btn = document.querySelector('.bty')
-  navbar = document.querySelector('.nav')
-
-  btn.addEventListener('click', () => {
-    navbar.classList.toggle('showmnpc')
-  })
-</script>

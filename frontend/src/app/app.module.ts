@@ -11,6 +11,8 @@ import { HawdoweworkComponent } from './layout/hawdowework/hawdowework.component
 import { AboutComponent } from './layout/about/about.component';
 import { BranchesComponent } from './layout/branches/branches.component';
 import { NavComponent } from './layout/nav/nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VisionComponent } from './layout/vision/vision.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { NavComponent } from './layout/nav/nav.component';
     AboutComponent,
     BranchesComponent,
     NavComponent,
+    VisionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration()

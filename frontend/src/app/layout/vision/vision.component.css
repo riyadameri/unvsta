@@ -1,4 +1,4 @@
-.containerServices {
+.containerProfessional {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -14,53 +14,55 @@
   margin-left: auto;
   margin-right: 20px;
 }
-.row{
+
+.row {
   display: flex;
-  flex-direction : row ;
+  flex-direction: row;
   justify-content: space-between;
 }
-.serviceTitle {
+
+.professionalTitle {
   display: flex;
   flex-direction: column;
 }
 
-.serviceTitleText {
+.professionalTitleText {
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.serviceSubTitle {
+.professionalSubTitle {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.serviceDescription {
+.professionalDescription {
   line-height: 1.6;
 }
 
-.serviceDescription p {
+.professionalDescription p {
   margin-bottom: 10px;
 }
 
-.serviceDescription ol {
+.professionalDescription ol {
   padding-left: 20px;
   margin-bottom: 10px;
 }
 
-.serviceDescription li {
+.professionalDescription li {
   margin-bottom: 5px;
 }
 
-.serviceDescription strong {
+.professionalDescription strong {
   font-weight: bold;
   color: rgb(18, 140, 255);
 }
 
-.serviceImage {
-  width:40%;
+.professionalImage {
+  width: 40%;
   max-width: 600px;
   margin-bottom: 20px;
-  border-radius: 15px ;
+  border-radius: 15px;
 }

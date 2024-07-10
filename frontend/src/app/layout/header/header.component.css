@@ -1,52 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins',sans-serif;
-
+  font-family: 'Poppins', sans-serif;
 }
-body{
 
+body {
   display: flex;
   flex-direction: column;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   width: 3rem;
 }
-body::-webkit-scrollbar-track{
-  background-color : rgb(46, 48, 49) ;
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(46, 48, 49);
 }
-body::-webkit-scrollbar-thumb{
-  background-color : rgb(18, 140, 255) ;
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(18, 140, 255);
 }
-header{
-  display : flex ;
-  flex-direction : row ;
-  justify-content : space-between ;
-  align-items : center ;
-  background-color : rgb(18, 140, 255) ;
-  color : white ;
-  padding : 1em ;
-  font-size : 1.5em ;
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(18, 140, 255);
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
 }
-.mainTitle{
+
+.mainTitle {
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px rgb(0, 0, 0);
   text-align: center;
-  padding-left : 20px;
-  cursor : pointer ;
+  padding-left: 20px;
+  cursor: pointer;
   position: relative;
-  animation-name : prsentLogo ;
-  animation-duration :2s;
-  animation-timing-function:ease-in ;
-  animation-iteration-count:1 ;
+  animation-name: prsentLogo;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
-
 }
-.sm{
+
+.sm {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -55,35 +60,53 @@ header{
   margin: 0;
   align-self: center;
   margin-left: 70px;
+  padding-right: 20px;
 }
-.menu{
-  width : 30px;
-  height : 30px;
-  cursor : pointer ;
+
+.menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   padding: 0;
   margin: 0;
   flex-direction: end;
   align-items: end;
   display: none;
 }
-.search{
-  padding : 0;
-  margin: 0 ;
+
+.search {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
   border-radius: 5px;
-  padding: 0.1em;
-  padding-right: 20px;
+  padding: 0.1em 20px 0.1em 0;
+  transition: width 0.3s, border-radius 0.3s, background-color 0.3s;
 }
-.acount{
-  padding : 10px;
-  cursor: pointer;
 
+.search:hover {
+  color: rgb(18, 140, 255);
+  background-color: aliceblue;
+  border-radius: 8px;
+  width: 300px;
 }
-.search-box{
+
+.acount {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.acount:hover {
+  color: rgb(18, 140, 255);
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+
+.search-box {
   background-color: transparent;
   border: none;
   outline: none;
@@ -91,18 +114,33 @@ header{
   width: 100%;
   margin: 0;
   font-size: 15px;
+  transition: background-color 0.3s, width 0.3s;
 }
-.searshIon{
+
+.search-box:focus {
+  background-color: rgb(235, 248, 255);
+  width: 300px;
+  border-radius: 8px;
+}
+
+.search-box:active {
+  background-color: rgb(235, 248, 255);
+  width: 300px;
+}
+
+.searshIon {
   width: 20px;
   height: 20px;
   padding: 0;
   margin: 0;
-  cursor:pointer;
+  cursor: pointer;
 }
+
 @keyframes prsentLogo {
-  from{
-    transform:translateY(-300px) ;
-  }to{
-    transform:translateY(0) ;
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
