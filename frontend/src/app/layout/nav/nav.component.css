@@ -1,5 +1,6 @@
 *{
   margin :0;
+  padding: 0;
 }
 .nav {
   display: flex;
@@ -81,4 +82,14 @@ h1 {
   to {
     left: 0;
   }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .nav{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: auto;
+    position: fixed;
+    bottom: 10px;
+}
 }
