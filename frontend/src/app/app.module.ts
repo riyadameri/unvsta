@@ -13,6 +13,7 @@ import { BranchesComponent } from './layout/branches/branches.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisionComponent } from './layout/vision/vision.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { VisionComponent } from './layout/vision/vision.component';
     BranchesComponent,
     NavComponent,
     VisionComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

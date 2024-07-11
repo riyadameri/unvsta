@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 * {
   margin: 0;
@@ -25,13 +25,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
+  position: absolute;
   display: flex;
   flex-direction: row;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(18, 140, 255);
+  background-color: rgb(18, 140, 255,0.2);
   color: white;
   padding: 1em;
+  padding-left: 80px;
   font-size: 1.5em;
 }
 
@@ -116,7 +119,9 @@ header {
   font-size: 15px;
   transition: background-color 0.3s, width 0.3s;
 }
-
+.mnsh{
+  padding : 8px
+}
 .search-box:focus {
   background-color: rgb(235, 248, 255);
   width: 300px;
@@ -143,4 +148,23 @@ header {
   to {
     transform: translateY(0);
   }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 20vh);
+  width: 200px;
+  background-color: rgba(18, 140, 255, 0.7);
+  transition: all 0.6s ease-in-out;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  z-index: 1000;
+  margin: 0;
+  transform: translateY(0); /* Start position */
+}
+
+.nav.hidden {
+  transform: translateY(-100%); /* Hide navbar */
 }

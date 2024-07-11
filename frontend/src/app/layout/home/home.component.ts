@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+
+  users = ['islam','riyad'];
+  Age = [17,19];
 }
