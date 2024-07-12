@@ -1,5 +1,8 @@
+
+
 body {
-  background-image: url("assets/unv_img/departement.jpg");
+  /* background-image: url("assets/unv_img/departement.jpg"); */
+  background-color : #3f465d ;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,4 +12,5 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins';
 }

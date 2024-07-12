@@ -1,0 +1,11 @@
+.news{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  
+}

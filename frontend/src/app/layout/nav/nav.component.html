@@ -1,5 +1,5 @@
 <div class="nav" [@openClose]="isOpen ? 'open' : 'closed'">
-  <div class="nav-it" (click)="toggle()">
+  <div class="nav-it mnsh" (click)="toggle()">
     <a class="nav-btn"><h1></h1></a>
     <img id="pcmenu" class="mnpcbtn img-icon32" [@rotateIcon]="isOpen ? 'rotated' : 'default'" src="assets/icons/arrow_forward_ios_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
   </div>  
@@ -18,6 +18,7 @@
     <a class="nav-btn"><h1> Vision </h1></a>
     <img class="img-icon32" src="assets/icons/diversity_1_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="see">
   </div>  
+  
   
   <div class="nav-it" [routerLink]="['/about']">
     <a class="nav-btn"><h1> About us </h1></a>
