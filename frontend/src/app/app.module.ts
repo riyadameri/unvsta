@@ -14,6 +14,7 @@ import { NavComponent } from './layout/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisionComponent } from './layout/vision/vision.component';
 import { NewsComponent } from './news/news.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { NewsComponent } from './news/news.component';
     BranchesComponent,
     NavComponent,
     VisionComponent,
-    NewsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [
     provideClientHydration()
